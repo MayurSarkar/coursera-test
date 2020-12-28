@@ -15,7 +15,7 @@
   margin-top: 0px;
  
   margin-bottom: 10;
-  
+  line-height: .55;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
