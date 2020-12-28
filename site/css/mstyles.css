@@ -1,0 +1,175 @@
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+  align-content: center;
+}
+#p1 {
+  
+  
+  
+  width: 70px;
+  height: 25px;
+  font-weight: bold;
+}
+
+#p2 {
+  
+ 
+  color: black;
+  width: 70px;
+  height: 25px;
+  font-weight: bold;
+}
+
+#p3 {
+  
+  
+ 
+  color: black;
+  width: 70px;
+  height: 25px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+.flex>div {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: grey;
+  color: black;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 1px;
+  border: 4px solid black;
+}
+
+.features-main .grid {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+    .features-main .grid > *:first-child {
+        grid-column: 1 / span 2;
+    }
+    .features-main .grid > *:nth-child(2) {
+       grid-template-columns: 2fr 2fr;
+         
+    }
+    .features-main .grid > *:last-child {
+        grid-column: 1 / span 3;
+    }
+}
+
+/*  Mobile  */
+@media (max-width: 500px) {
+    .grid,
+    .features-main .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .features-main .grid > *:first-child,
+    .features-main .grid > *:nth-child(2),
+    .features-main .grid > *:last-child {
+            grid-column: 1;
+    }
+}
